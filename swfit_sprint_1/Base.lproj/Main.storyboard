@@ -36,6 +36,9 @@
                                 <rect key="frame" x="16" y="183" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Суммировать"/>
+                                <connections>
+                                    <action selector="SumButtonClick:" destination="BYZ-38-t0r" eventType="touchDown" id="WPg-Zj-Pwu"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Сумма" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DsM-gn-IO5">
                                 <rect key="frame" x="16" y="243" width="343" height="30"/>
