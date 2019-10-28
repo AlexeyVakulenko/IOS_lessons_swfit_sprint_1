@@ -48,6 +48,11 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="FirstTextView" destination="Qnm-tb-prP" id="Lok-He-f1a"/>
+                        <outlet property="SecondTextView" destination="T2H-NZ-ukM" id="LzV-07-RrH"/>
+                        <outlet property="SumTextView" destination="DsM-gn-IO5" id="rkw-s2-tXd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
