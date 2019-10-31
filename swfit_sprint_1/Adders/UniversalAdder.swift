@@ -8,28 +8,23 @@
 
 import UIKit
 
-class UniversalAdder: NSObject {
+protocol Summable {
+    static func + (_ : Self, _ : Self) -> Self
+}
 
-    var intAdder = IntAdder()
-    var floatAdder = FloatAdder()
-    var stringAdder = StringAdder()
-        
-    func add<T>(a: T, b: T) -> T? {
+extension Float: Summable { }
+extension Int: Summable { }
+extension Double: Summable { }
+extension String: Summable { }
+
+class UniversalAdder {
+    
+    func sum<T : Summable> (_ a: T, _ b: T) -> T? {
         NSLog("Попытка выполнить сложение")
         NSLog("Параметры")
         NSLog("a: \(a)")
         NSLog("a: \(b)")
         
-        if a is Int {
-            return intAdder.add(a: a as! Int, b: b as! Int) as! T
-        }
-        if a is Float {
-            return floatAdder.add(a: a as! Float, b: b as! Float) as! T
-        }
-        if a is String {
-            return stringAdder.add(a: a as! String, b: b as! String) as! T
-        }
-        return nil
+        return a + b
     }
-    
 }

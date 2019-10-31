@@ -21,29 +21,19 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-//    @IBAction func sumButtonClick(_ sender: Any) {
-//        var a = textView1.text;
-//        var b = textView2.text;
-//        var res = adder.add(a : a, b : b)
-//        print(res ?? "Не удалось")
-//    }
-    
-    
     @IBAction func SumButtonClick(_ sender: Any) {
-        if var firstText = FirstTextView!.text, var secondText = SecondTextView!.text {
+        if let firstText = FirstTextView!.text, var secondText = SecondTextView!.text {
             
-            if var first:Float = Float(firstText), var second:Float = Float(secondText) {
-                var res = adder.add(a:first, b: second)
+            if let first:Int = Int(firstText), var second:Int = Int(secondText) {
+                let res = adder.sum(first, second)
                 SumTextView.text = String(res!)
-            } else if var first:Int = Int(firstText), var second:Int = Int(secondText) {
-                var res = adder.add(a:first, b: second)
+            } else if let first:Float = Float(firstText), var second:Float = Float(secondText) {
+                let res = adder.sum(first, second)
                 SumTextView.text = String(res!)
             } else {
-                var res = adder.add(a:firstText, b: secondText)
+                let res = adder.sum(firstText, secondText)
                 SumTextView.text = String(res!)
             }
         }
     }
-    
 }
-

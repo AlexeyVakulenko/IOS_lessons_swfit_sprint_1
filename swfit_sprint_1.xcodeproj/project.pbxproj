@@ -14,10 +14,6 @@
 		319F48A62364EDFE00B033D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 319F48A42364EDFE00B033D4 /* LaunchScreen.storyboard */; };
 		319F48B12364EDFE00B033D4 /* swfit_sprint_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319F48B02364EDFE00B033D4 /* swfit_sprint_1Tests.swift */; };
 		319F48BC2364EDFE00B033D4 /* swfit_sprint_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319F48BB2364EDFE00B033D4 /* swfit_sprint_1UITests.swift */; };
-		319F48CD2365E71400B033D4 /* IntAdder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319F48CC2365E71400B033D4 /* IntAdder.swift */; };
-		319F48CF2365E7FE00B033D4 /* AdderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319F48CE2365E7FE00B033D4 /* AdderProtocol.swift */; };
-		31DEED172366051E00DDB5E0 /* FloatAdder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DEED162366051E00DDB5E0 /* FloatAdder.swift */; };
-		31DEED192366055300DDB5E0 /* StringAdder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DEED182366055300DDB5E0 /* StringAdder.swift */; };
 		31DEED1B23660E5D00DDB5E0 /* UniversalAdder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DEED1A23660E5D00DDB5E0 /* UniversalAdder.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,10 +48,6 @@
 		319F48B72364EDFE00B033D4 /* swfit_sprint_1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swfit_sprint_1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		319F48BB2364EDFE00B033D4 /* swfit_sprint_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swfit_sprint_1UITests.swift; sourceTree = "<group>"; };
 		319F48BD2364EDFE00B033D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		319F48CC2365E71400B033D4 /* IntAdder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntAdder.swift; sourceTree = "<group>"; };
-		319F48CE2365E7FE00B033D4 /* AdderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdderProtocol.swift; sourceTree = "<group>"; };
-		31DEED162366051E00DDB5E0 /* FloatAdder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatAdder.swift; sourceTree = "<group>"; };
-		31DEED182366055300DDB5E0 /* StringAdder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringAdder.swift; sourceTree = "<group>"; };
 		31DEED1A23660E5D00DDB5E0 /* UniversalAdder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalAdder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,10 +131,6 @@
 		319F48CB2365E6EE00B033D4 /* Adders */ = {
 			isa = PBXGroup;
 			children = (
-				319F48CC2365E71400B033D4 /* IntAdder.swift */,
-				319F48CE2365E7FE00B033D4 /* AdderProtocol.swift */,
-				31DEED162366051E00DDB5E0 /* FloatAdder.swift */,
-				31DEED182366055300DDB5E0 /* StringAdder.swift */,
 				31DEED1A23660E5D00DDB5E0 /* UniversalAdder.swift */,
 			);
 			path = Adders;
@@ -279,13 +267,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				319F48CF2365E7FE00B033D4 /* AdderProtocol.swift in Sources */,
-				31DEED172366051E00DDB5E0 /* FloatAdder.swift in Sources */,
 				31DEED1B23660E5D00DDB5E0 /* UniversalAdder.swift in Sources */,
 				319F489E2364EDFD00B033D4 /* ViewController.swift in Sources */,
 				319F489C2364EDFD00B033D4 /* AppDelegate.swift in Sources */,
-				31DEED192366055300DDB5E0 /* StringAdder.swift in Sources */,
-				319F48CD2365E71400B033D4 /* IntAdder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

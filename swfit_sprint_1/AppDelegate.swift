@@ -15,12 +15,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-//        var a = 1;
-//        var b = 3;
-//        var adder = UniversalAdder()
-//        var res = adder.add(a : a, b : b)
-//        print(res ?? "Не удалось")
         return true
     }
 
