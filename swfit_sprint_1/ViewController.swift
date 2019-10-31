@@ -22,12 +22,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction func SumButtonClick(_ sender: Any) {
-        if let firstText = FirstTextView!.text, var secondText = SecondTextView!.text {
+        if let firstText = FirstTextView!.text, let secondText = SecondTextView!.text {
             
-            if let first:Int = Int(firstText), var second:Int = Int(secondText) {
+            if let first:Int = Int(firstText), let second:Int = Int(secondText) {
                 let res = adder.sum(first, second)
                 SumTextView.text = String(res!)
-            } else if let first:Float = Float(firstText), var second:Float = Float(secondText) {
+            } else if let first:Float = Float(firstText), let second:Float = Float(secondText) {
                 let res = adder.sum(first, second)
                 SumTextView.text = String(res!)
             } else {
