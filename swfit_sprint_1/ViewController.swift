@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     var adder: UniversalAdder = UniversalAdder()
     
@@ -21,6 +21,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    
+    
+    
     @IBAction func SumButtonClick(_ sender: Any) {
         if let firstText = FirstTextView!.text, let secondText = SecondTextView!.text {
             
@@ -35,5 +38,10 @@ class ViewController: UIViewController {
                 SumTextView.text = String(res!)
             }
         }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }
